@@ -1295,13 +1295,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6}
   m_LocalScale: {x: 3.9755461, y: 4, z: 2.0244613}
   m_Children: []
   m_Father: {fileID: 1492861716}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &587111454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,11 +2919,11 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1492861710}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 5
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2938,7 +2938,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c119628f807089478cadcecc2d89660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 0
   m_rigidBody: {fileID: 1492861711}
 --- !u!65 &1492861713
 BoxCollider:
@@ -3002,7 +3001,7 @@ Transform:
   m_GameObject: {fileID: 1492861710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.85, y: 2.84, z: 0.348}
-  m_LocalScale: {x: 0.5, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.5}
   m_Children:
   - {fileID: 534669905}
   - {fileID: 1304555474}
