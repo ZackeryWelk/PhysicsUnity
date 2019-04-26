@@ -13,7 +13,7 @@ public class exit : MonoBehaviour {
     void Update() {
 
     }
-
+    //stops the program from running
     public void quit()
     {
         Application.Quit();

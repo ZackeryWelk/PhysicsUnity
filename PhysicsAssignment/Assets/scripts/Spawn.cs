@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class Spawn : MonoBehaviour {
     public Text textbox;
 	// Use this for initialization
@@ -12,6 +11,7 @@ public class Spawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //makes a textbox output the location of the ragdoll using raycast
         int layermask = 1 << 8;
 
         RaycastHit hit;

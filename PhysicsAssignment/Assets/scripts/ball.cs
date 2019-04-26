@@ -16,6 +16,7 @@ public class ball : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //controls for the flying prism
 		if(Input.GetKey(KeyCode.UpArrow))
         {
             transform.Rotate(1.5f, 0f, 0f);

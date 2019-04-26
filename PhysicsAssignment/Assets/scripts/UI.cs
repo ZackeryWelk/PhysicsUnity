@@ -16,6 +16,7 @@ public class UI : MonoBehaviour {
 
     public void Ragdoll()
     {
+        //activates the ragdoll and starts the particle system.
         Ragdoll ragdoll = body.GetComponent<Ragdoll>();
         ragdoll.ragdollOn = true;
         ParticleSystem particleSystem = body.GetComponentInChildren<ParticleSystem>();
@@ -23,12 +24,12 @@ public class UI : MonoBehaviour {
     }
 
     public void Stop()//stops walking 
-    {
+    {//changes animation on ragdoll
         Animator anim = body.GetComponent<Animator>();
         anim.SetBool("stop", true);
     }
     public void startWalking()
-    {
+    {//changes animation on ragdoll
         Animator anim = body.GetComponent<Animator>();
         anim.SetBool("stop", false);
     }

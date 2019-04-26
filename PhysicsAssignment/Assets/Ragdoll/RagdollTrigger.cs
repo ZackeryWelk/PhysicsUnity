@@ -6,6 +6,7 @@ public class RagdollTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        //triggers the ragdoll to activate
         Ragdoll ragdoll = other.gameObject.GetComponentInParent<Ragdoll>();
         if (ragdoll != null)
         {

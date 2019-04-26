@@ -32,7 +32,8 @@ public class characterCon : MonoBehaviour {
         controller.SimpleMove(transform.up * Time.deltaTime);
         //transform.Rotate(transform.up, horizontal * speed * Time.deltaTime);
         //animator.SetFloat("speed", vertical * speed * Time.deltaTime);
-
+        
+        //controls for the ragdoll when the animation is running
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(transform.up, horizontal * speed * Time.deltaTime);

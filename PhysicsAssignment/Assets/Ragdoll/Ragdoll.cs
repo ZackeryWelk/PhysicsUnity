@@ -14,7 +14,7 @@ public class Ragdoll : MonoBehaviour {
     {
         get { return !animator.enabled;}
         set
-        {
+        {//makes the ragdoll enter ragdoll and stop running the animation
             animator.enabled = !value;
             foreach(Rigidbody r in rigidbodies)
                 r.isKinematic = !value;
@@ -22,6 +22,7 @@ public class Ragdoll : MonoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
+        //makes all the parts of the ragdoll kinematic
         animator = GetComponent<Animator>();
         foreach(Rigidbody r in rigidbodies)
             r.isKinematic = true;
